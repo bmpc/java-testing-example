@@ -39,4 +39,17 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <configuration>
+            <useSystemClassLoader>false</useSystemClassLoader>
+        </configuration>
+    </plugin>
+    <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+            <useSystemClassLoader>false</useSystemClassLoader>
+        </configuration>
+    </plugin>
 </project>
